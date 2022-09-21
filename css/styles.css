@@ -144,9 +144,6 @@ img {
     }
 
     .main__hero-image {
-        min-width: 90rem;
-        max-width: 110rem;
-        width: 100%;
         height: auto;
         max-height: 100vh;
     }
@@ -216,7 +213,7 @@ img {
         border: 1px solid #dbcbcc;
         width: 100%;
         border-radius: 30px;
-        margin-bottom: 8rem;
+        margin-bottom: 1rem;
     }
 
     .main__input-group input {
@@ -225,7 +222,7 @@ img {
         border: none;
         background-color: inherit;
         font-size: 1.4rem;
-        color: var(--Desaturated-Red);
+        color: #111;
         margin-left: 1.5rem;
         flex-grow: 1;
     }
@@ -255,6 +252,12 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s;
+    }
+    
+    .main__input-group button:hover {
+        background: #f9d5d5;
+        box-shadow: 0 10px 20px 5px #debdbd;
     }
 
     .main__input-group button img {
@@ -263,31 +266,19 @@ img {
 
     .main__error-message {
         display: none;
+        position: relative;
+        left: 3rem;
+        color: var(--Soft-Red);
+        font-size: 1.4rem;
     }
 
     @media screen and (min-width: 1024px) {
-        .main__input-group {
-         
-        }
-    
         .main__input-group input {
             font-size: 1.6rem;
         }
     
-        .main__input-group label {
-       
-        }
-    
         .main__input-group button {
             padding: 2.8rem 5rem;
-        }
-    
-        .main__input-group button img {
-            
-        }
-    
-        .main__error-message {
-            
         }
     }
 
