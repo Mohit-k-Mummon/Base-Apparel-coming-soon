@@ -16,43 +16,57 @@
 		<title>Frontend Mentor | Base Apparel Coming Soon</title>
 	</head>
 	<body>
-		<section class="hero">
-			<nav class="hero__nav">
-				<img src="images/logo.svg" alt="Base Apparel Logo" />
+		<main class="main">
+			<nav class="main__nav">
+				<img class="main__logo" src="images/logo.svg" alt="Base Apparel Logo" />
 			</nav>
 
-			<picture class="hero__image-container">
+			<picture class="main__hero-image-container">
 				<source media="(min-width: 1024px)" srcset="images/hero-desktop.jpg" />
 				<source media="(max-width: 1023px)" srcset="images/hero-mobile.jpg" />
-				<img class="hero__image" src="images/hero-mobile.jpg" alt="" />
+				<img class="main__hero-image" src="images/hero-mobile.jpg" alt="" />
 			</picture>
 
-			<div class="hero__body">
-				<h1 class="hero__heading">We're coming soon</h1>
+			<article class="main__body">
+				<h1 class="main__heading">
+					<span>We're</span>
+					<br />
+					coming
+					<br />
+					soon
+				</h1>
 
-				<p class="hero__text">
-					We're coming soon Hello fellow shoppers! We're currently building our new
-					fashion store. Add your email below to stay up-to-date with announcements and
-					our launch deals. Email Address
+				<p class="main__text">
+					Hello fellow shoppers! We're currently building our new fashion store. Add your
+					email below to stay up-to-date with announcements and our launch deals.
 				</p>
 
-				<div class="hero__input-group">
-					<input type="text" name="" id="" />
+				<div class="main__input-group">
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Email Address"
+						required
+					/>
+					<label for="email">
+						<img src="images/icon-error.svg" alt="" />
+					</label>
 
-					<button>
+					<button type="submit">
 						<img src="images/icon-arrow.svg" alt="arrow icon" />
 					</button>
 				</div>
-			</div>
-		</section>
-
-		<footer>
-			<p class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer>
+				<p class="main__error-message">Please enter a valid email</p>
+				<footer>
+					<p class="attribution">
+						Challenge by
+						<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+							>Frontend Mentor</a
+						>. Coded by <a href="https://github.com/Mohit-k-Mummon">Mohit K Mummon</a>.
+					</p>
+				</footer>
+			</article>
+		</main>
 	</body>
 </html>
