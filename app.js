@@ -8,12 +8,11 @@ const inputGroup = document.querySelector('.main__input-group');
 form.addEventListener('submit', validate);
 submit.addEventListener('click', validate);
 
-// This function is to prevent default form and button actions
+// This function is to prevent default form and button actions + email validation via regex
 function validate(e) {
 	e.preventDefault();
 
 	const inputValue = input.value.trim();
-	console.log(inputValue);
 
 	if (!isEmail(inputValue)) {
 		error.style.display = 'block';
@@ -28,6 +27,7 @@ function validate(e) {
 	}
 }
 
+// Regex function
 function isEmail(input) {
 	return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input);
 }
