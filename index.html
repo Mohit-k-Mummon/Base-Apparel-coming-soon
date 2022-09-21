@@ -41,22 +41,23 @@
 					email below to stay up-to-date with announcements and our launch deals.
 				</p>
 
-				<div class="main__input-group">
-					<input
-						type="email"
-						name="email"
-						id="email"
-						placeholder="Email Address"
-						required
-					/>
-					<label for="email">
-						<img src="images/icon-error.svg" alt="" />
-					</label>
-
-					<button type="submit">
-						<img src="images/icon-arrow.svg" alt="arrow icon" />
-					</button>
-				</div>
+				<form class="form" autocomplete="off">
+					<div class="main__input-group">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email Address"
+							required
+						/>
+						<label class="label" for="email">
+							<img src="images/icon-error.svg" alt="" />
+						</label>
+						<button id="submit-btn" type="submit">
+							<img src="images/icon-arrow.svg" alt="arrow icon" />
+						</button>
+					</div>
+				</form>
 				<p class="main__error-message">Please enter a valid email</p>
 				<footer>
 					<p class="attribution">
