@@ -173,6 +173,7 @@ img {
     color: var(--Dark-Grayish-Red);
     margin: 3rem 0 2rem 0;
     line-height: 1.1;
+    text-align: center;
 }
 
 .main__body .main__heading span {
