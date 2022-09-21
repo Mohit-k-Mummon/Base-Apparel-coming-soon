@@ -145,7 +145,8 @@ img {
 
     .main__hero-image {
         height: auto;
-        max-height: 100vh;
+        min-height: 100vh;
+        min-width: 61rem;
     }
 }
 
@@ -267,18 +268,27 @@ img {
     .main__error-message {
         display: none;
         position: relative;
-        left: 3rem;
+        right: 5rem;
         color: var(--Soft-Red);
         font-size: 1.4rem;
     }
 
+    
     @media screen and (min-width: 1024px) {
         .main__input-group input {
             font-size: 1.6rem;
         }
-    
+        
         .main__input-group button {
             padding: 2.8rem 5rem;
+        }
+
+        .main__error-message {
+            display: none;
+            position: relative;
+            left: 3rem;
+            color: var(--Soft-Red);
+            font-size: 1.4rem;
         }
     }
 
@@ -296,5 +306,6 @@ img {
         position: absolute;
         left: 25%;
         bottom: 3px;
+        display: block;
     }
 }
